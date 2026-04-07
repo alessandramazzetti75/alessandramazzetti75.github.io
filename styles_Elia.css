@@ -1,0 +1,173 @@
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  display: flex; /* Tutti i suoi figli sono disposti in modo flessibile, cioè occupare lo spazio minimo possibile*/
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem auto; /*Con due valori significa sopra-sotto e destra-sinistra*/
+  border: #222 2px dashed;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-size: 3.5em;
+  font-style: italic;
+  color: #222;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: #000000 2px solid;
+  background-color: #ffffff;
+
+  /* AGGIUNGI QUESTI PER L'EFFETTO PULSANTE */
+  display: inline-block;    /* Fondamentale per dare dimensioni */
+  padding: 10px 20px;       /* Spazio interno: sopra/sotto e destra/sinistra */
+  border-radius: 8px;       /* Arrotonda gli angoli */
+  transition: all 0.3s;     /* Rende l'animazione fluida */
+  cursor: pointer;          /* Fa apparire la manina */
+}
+
+/* EFFETTO AL PASSAGGIO DEL MOUSE (HOVER) */
+.navbar a:hover {
+  background-color: #000000;   /* Inverte i colori */
+  color: #ffffff;
+  transform: translateY(-2px); /* Lo fa saltare leggermente su */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Aggiunge un'ombra */
+}
+
+/* EFFETTO AL CLICK */
+.navbar a:active {
+  transform: translateY(0); /* Torna giù quando clicchi */
+}
+
+section {
+  margin: 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+section article {
+  margin: 1rem 25%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: #555 2px 2px 4px;
+  border-radius: 20px;
+}
+
+article h3 {
+  align-items: flex-start;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+article p {
+  margin: 0 1rem 1rem;
+  font-size: 1.05rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+section .service-item {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-item img {
+  max-width: 30%;
+  border-radius: 0 20px 20px 0;
+}
+
+section .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15rem;
+  margin: 1rem;
+}
+
+.card img {
+  width: 15rem;
+  border-radius: 20px 20px 20px 20px;
+}
+
+footer {
+  margin: 1rem;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+}
+
+footer .logo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo-container img {
+  max-width: 400px;
+}
+
+.logo-container p {
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.7rem;
+  border: #000000 2px solid;
+  background-color: #ffffff;
+
+  /* AGGIUNGI QUESTI PER L'EFFETTO PULSANTE */
+  display: inline-block;    /* Fondamentale per dare dimensioni */
+  padding: 10px 20px;       /* Spazio interno: sopra/sotto e destra/sinistra */
+  border-radius: 8px;       /* Arrotonda gli angoli */
+  transition: all 0.3s;     /* Rende l'animazione fluida */
+  cursor: pointer;          /* Fa apparire la manina */
+}
+
+/* EFFETTO AL PASSAGGIO DEL MOUSE (HOVER) */
+.button a:hover {
+  background-color: #000000;   /* Inverte i colori */
+  color: #ffffff;
+  transform: translateY(-2px); /* Lo fa saltare leggermente su */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Aggiunge un'ombra */
+}
+
+/* EFFETTO AL CLICK */
+.button a:active {
+  transform: translateY(0); /* Torna giù quando clicchi */
+}
