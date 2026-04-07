@@ -1,0 +1,124 @@
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  display: flex; /* Tutti i suoi figli sono disposti in modo flessibile, cioè occupare lo spazio minimo possibile*/
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem auto; /*Con due valori significa sopra-sotto e destra-sinistra*/
+  border: #222 2px dashed;
+  background-color: #ccccff;
+  font-size: 3.5em;
+  font-style: italic;
+  color: #222;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  border: #222 2px dashed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: #222 2px solid;
+  background-color: #ccccff;
+}
+
+section {
+  margin: 1rem;
+  border: #222 2px dashed;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+section article {
+  margin: 1rem 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #555 2px 2px 4px;
+  border-radius: 20px;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+article p {
+  margin: 0 1rem 1rem;
+  font-size: 1.05rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+section .service-item {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-item img {
+  max-width: 67%;
+  border-radius: 0 20px 20px 0;
+}
+
+section .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15rem;
+  margin: 1rem;
+}
+
+.card img {
+  width: 15rem;
+  border-radius: 20px 20px 0 0;
+}
+
+footer {
+  margin: 1rem;
+  border: #222 2px dashed;
+  background-color: #ccccff;
+}
+
+footer .logo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo-container img {
+  max-width: 180px;
+}
+
+.logo-container p {
+  font-size: 0.9rem;
+  color: #222;
+}
