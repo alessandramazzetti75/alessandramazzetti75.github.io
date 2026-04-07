@@ -1,0 +1,151 @@
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fffd9483;
+  color: #333;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infin
+}
+
+@keyframes gradientBG {
+  0% { background-position : 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  display: flex; /* Tutti i suoi figli sono disposti in modo flessibile, cioè occupare lo spazio minimo possibile*/
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem auto; /*Con due valori significa sopra-sotto e destra-sinistra*/
+  border: #222 2px dashed;
+  background-color: #eea857;
+  font-size: 3.5em;
+  font-style: italic;
+  color: #222;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  border: #222 2px dashed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: #222 2px solid;
+  background-color: #eea857;
+}
+
+
+section {
+  margin: 1rem;
+  border: #222 2px dashed;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+section article {
+  margin: 1rem 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #555 2px 2px 4px;
+  border-radius: 20px;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+article p {
+  margin: 0 1rem 1rem;
+  font-size: 1.05rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+section .service-item {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.service-item img {
+  max-width: 30%;
+  border-radius: 0 20px 20px 0;
+}
+
+section .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15rem;
+  margin: 1rem;
+  background: rgba(255, 255, 255,0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.card img {
+ width: 100%;           /* Si adatta ai 15rem della card */
+  height: 240px;         /* Altezza fissa: ora tutte le foto sono uguali! */
+  object-fit: cover;     /* Ritaglia l'immagine senza distorcerla */
+  object-position: top;   /* Tiene il focus sulla testa/cima della foto */
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+footer {
+  margin: 1rem;
+  border: #222 2px dashed;
+  background-color: #eea857;
+}
+
+footer .logo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo-container img {
+  max-width: 180px;
+}
+
+.logo-container p {
+  font-size: 0.9rem;
+  color: #222;
+}
