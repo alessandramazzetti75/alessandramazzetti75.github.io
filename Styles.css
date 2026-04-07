@@ -58,6 +58,7 @@ h1 {
   transform: translateY(0); /* Torna giù quando clicchi */
 }
 
+
 section {
   margin: 1rem;
   border: #222 2px continued;
@@ -117,7 +118,7 @@ section .cards {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 12rem;
+  width: 15rem;
   margin: 1rem;
 }
 
