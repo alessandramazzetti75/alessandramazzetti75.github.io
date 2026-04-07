@@ -1,0 +1,155 @@
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #d1f6ff;
+  color: #000986;
+}
+
+header {
+  display: flex; /* Tutti i suoi figli sono disposti in modo flessibile, cioè occupare lo spazio minimo possibile*/
+  flex-direction: column;
+}
+
+h1 {
+  margin: 1rem auto; /*Con due valori significa sopra-sotto e destra-sinistra*/
+  border: #222 2px continued;
+  background-color: #f5deb3;
+  font-size: 3.5em;
+  font-style: roboto;
+  color: #000986;
+  border-radius: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+  border: #222 2px continued;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000986;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: #222 2px solid;
+  background-color: #f5deb3;
+
+  /* AGGIUNGI QUESTI PER L'EFFETTO PULSANTE */
+  display: inline-block;    /* Fondamentale per dare dimensioni */
+  padding: 10px 20px;       /* Spazio interno: sopra/sotto e destra/sinistra */
+  border-radius: 8px;       /* Arrotonda gli angoli */
+  transition: all 0.3s;     /* Rende l'animazione fluida */
+  cursor: pointer;          /* Fa apparire la manina */
+}
+
+/* EFFETTO AL PASSAGGIO DEL MOUSE (HOVER) */
+.navbar a:hover {
+  background-color: #222;   /* Inverte i colori */
+  color: #f5deb3;
+  transform: translateY(-2px); /* Lo fa saltare leggermente su */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Aggiunge un'ombra */
+}
+
+/* EFFETTO AL CLICK */
+.navbar a:active {
+  transform: translateY(0); /* Torna giù quando clicchi */
+}
+
+section {
+  margin: 1rem;
+  border: #222 2px continued;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #000986;
+}
+
+section article {
+  margin: 1rem 25%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #555 2px 2px 4px;
+  background-color: #f5deb3;
+  border-radius: 20px;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+article p {
+  margin: 0 1rem 1rem;
+  font-size: 1.05rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  top: 0%;
+}
+
+section .service-item {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-item img {
+  max-width: 30%;
+  border-radius: 0 20px 20px 0;
+}
+
+section .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 12rem;
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;           /* Si adatta ai 15rem della card */
+  height: 240px;         /* Altezza fissa: ora tutte le foto sono uguali! */
+  object-fit: cover;     /* Ritaglia l'immagine senza distorcerla */
+  object-position: top;   /* Tiene il focus sulla testa/cima della foto */
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+footer {
+  margin: 1rem;
+  border: #222 2px continued;
+  background-color: #0056b3;
+}
+
+footer .logo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo-container img {
+  max-width: 180px;
+  position: relative;
+  top: 10px;
+  left: -6px;
+}
+
+.logo-container p {
+  font-size: 0.9rem;
+  color: #222;
+}

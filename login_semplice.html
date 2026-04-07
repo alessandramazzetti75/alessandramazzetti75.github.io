@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet"
+          href="Styles.css">
+</head>
+<body>
+
+  <h2 style="color:mediumorchid; text-align: center;">Inserire Username e password per accedere al sito <i>"Uomini e Donne di Pace"</i></h2>
+  <main>
+
+    <section id="Login">
+      <article class="news-item">
+        <form style="text-align: center;" id="loginForm">
+          <label for="username">Utente:</label><br>
+          <input type="text" id="username" name="username"><br><br>
+
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"><br><br>
+
+          <button type="submit">Login</button>
+        </form>
+        <img src="./Immagine Pace.webp" alt="placeholder" class="immagine-sfocata" alt="Descrizione">
+      </article>
+    </section>
+  </main>
+
+    
+  <p id="errore" style="color:red; display:none;"><b>Credenziali non valide.</b></p>
+
+  <script>
+    const UTENTI = {
+      "admin": "1234",
+      "mario.rossi": "scuola2025"
+    };
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      const errore = document.getElementById('errore');
+
+      if (UTENTI[user] && UTENTI[user] === pass) {
+        errore.style.display = 'none';
+        //alert('Accesso effettuato. Benvenuto, ' + user + '!');
+        window.location.href = 'index.html';
+      } else {
+        errore.style.display = 'block';
+        document.getElementById('password').value = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
